@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(17, 151, 147) 11.2%,
+    rgb(154, 214, 212) 55.4%,
+    rgb(255, 233, 171) 100.2%
+  );
+}
+.container {
+  width: 550px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+a {
+  color: black;
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+}
+#between {
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+}
+.search {
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+}
+.container .search:hover {
+  color: white;
+  background-color: grey;
+}
+.container button:hover {
+  color: white;
+  background-color: grey;
+}
+button {
+  position: relative;
+  top: -55px;
+  left: 400px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+}
+.col-2 {
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+}
+.card {
+  margin: 0 auto;
+  background: linear-gradient(
+    109.6deg,
+    rgb(17, 151, 147) 11.2%,
+    rgb(154, 214, 212) 55.4%,
+    rgb(255, 233, 171) 100.2%
+  );
+  width: 550px;
+  padding: 0px;
+}

@@ -7,27 +7,38 @@ body {
   );
 }
 .container {
-  width: 550px;
+  max-width: 650px;
+  border: 1px solid gray;
+  margin: 20px auto;
+  border-radius: 5px;
 }
 h1 {
   text-align: center;
 }
 h2 {
   text-align: center;
+  font-size: 16px;
 }
 form {
   text-align: center;
 }
-a {
+#celsius {
   color: black;
-  font-size: 15px;
+  font-size: 10px;
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
 }
-#between {
-  font-size: 15px;
+#fahrenheit {
+  color: black;
+  font-size: 10px;
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
+}
+
+#between {
+  font-size: 10px;
+  position: relative;
+  bottom: 20px;
 }
 .search {
   border-radius: 10px;
@@ -45,7 +56,7 @@ a {
 button {
   position: relative;
   top: -55px;
-  left: 400px;
+  left: 450px;
   border-radius: 10px;
   color: black;
   background-color: white;
@@ -64,5 +75,11 @@ button {
     rgb(255, 233, 171) 100.2%
   );
   width: 550px;
-  padding: 0px;
+  padding: 0px 11px;
+}
+footer {
+  font-size: small;
+  display: block;
+  color: gray;
+  margin: 20px;
 }

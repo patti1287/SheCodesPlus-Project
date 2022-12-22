@@ -71,6 +71,13 @@ function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `Wind: ${Math.round(response.data.wind.speed)} mph`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function celsiusConvert(event) {

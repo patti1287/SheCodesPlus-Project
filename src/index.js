@@ -63,25 +63,27 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-function displayForecast() {
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
+
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
 
  <div class="col-2" id="forecast">
-  <u>${day}</u>
+  <u>${forecastDay.dt}</u>
 </br>
   11/9
 </br>
-   🌥
+   src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
 </br>
-   Hi: 58℉
+   ${forecastDay.temp.max}º
 </br>
-Lo: 42℉
+${forecastDay.temp.min}º
   </div>`;
   });
   forecastHTML = forecastHTML + `</div>`;

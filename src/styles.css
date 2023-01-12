@@ -85,6 +85,10 @@ button {
   width: 550px;
   padding: 0px 11px;
 }
+#icons {
+  position: relative;
+  left: -17px;
+}
 footer {
   font-size: small;
   display: block;

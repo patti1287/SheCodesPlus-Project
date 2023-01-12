@@ -86,7 +86,7 @@ function displayForecast(response) {
 </br>
     <img src="http://openweathermap.org/img/wn/${
       forecastDay.weather[0].icon
-    }@2x.png" />
+    }@2x.png" id="icons"/>
 </br>
    ${Math.round(forecastDay.temp.max)}º
 </br>
@@ -146,11 +146,11 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(showTemperature);
 }
+window.onload = getCurrentLocation;
 
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrentLocation);
